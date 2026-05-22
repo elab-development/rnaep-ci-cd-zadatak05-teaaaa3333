@@ -151,3 +151,4 @@ jobs:
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/payment-service:${{ steps.vars.outputs.tag }}
             ${{ secrets.DOCKERHUB_USERNAME }}/payment-service:${{ github.sha }}
+            
