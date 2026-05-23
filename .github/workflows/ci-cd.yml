@@ -64,8 +64,8 @@ jobs:
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v5
         with:
-          context: ./payment
-          file: ./payment/Dockerfile
+          context: .                 
+          file: ./payment/Dockerfile  
           push: true
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/payment-service:${{ steps.vars.outputs.tag }}
